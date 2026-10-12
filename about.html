@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About · 김다애 포트폴리오</title>
+<meta name="description" content="김다애 UI/UX 디자이너 포트폴리오">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0;background:#F2F2EF}
+a{color:#0B0B0C}a:hover{color:#2B3BFF}
+.pf{font-family:'Noto Sans KR',system-ui,sans-serif;color:#0B0B0C;background:#F2F2EF;-webkit-font-smoothing:antialiased;overflow-x:clip;word-break:keep-all}
+.pf *{box-sizing:border-box}
+.disp{font-family:'Archivo','Noto Sans KR',sans-serif;font-stretch:125%;font-weight:800;letter-spacing:-0.04em;line-height:.86}
+.ko{font-family:'Noto Sans KR',sans-serif;font-weight:900;letter-spacing:-0.05em;line-height:1}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.wrap{max-width:1320px;margin:0 auto;padding-left:clamp(20px,4vw,56px);padding-right:clamp(20px,4vw,56px)}
+.outline{color:transparent;-webkit-text-stroke:2px #0B0B0C}
+.accent{color:var(--accent)}
+.mask{display:block;overflow:hidden;padding-bottom:.06em}
+.mask>span{display:inline-block}
+.nl{text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0% 1px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .5s cubic-bezier(.16,1,.3,1),color .3s;padding:4px 0}
+.nl:hover{background-size:100% 1px}
+.circ{width:56px;height:56px;border-radius:50%;border:1px solid rgba(11,11,12,.25);display:inline-flex;align-items:center;justify-content:center;color:#0B0B0C;text-decoration:none;transition:border-color .3s}
+.circ:hover{border-color:#0B0B0C}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:2px solid #0B0B0C;padding-bottom:18px}
+.item{position:relative;border-bottom:1px solid rgba(11,11,12,.16);transition:padding .5s cubic-bezier(.16,1,.3,1)}
+.item::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .7s cubic-bezier(.16,1,.3,1)}
+.item:hover::after{transform:scaleX(1)}
+.item:hover .item-t{color:var(--accent)}
+.item-t{transition:color .35s}
+.pill{display:inline-flex;align-items:center;height:26px;padding:0 10px;border:1px solid rgba(11,11,12,.22);border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;white-space:nowrap}
+.track{height:3px;background:rgba(11,11,12,.1);overflow:hidden;margin-top:12px}
+.track>i{display:block;height:100%;background:var(--accent);transform-origin:left}
+.contact{display:flex;gap:14px;align-items:center;padding:16px 0;border-top:1px solid rgba(11,11,12,.12);text-decoration:none;color:#0B0B0C;transition:padding .4s cubic-bezier(.16,1,.3,1)}
+.contact:hover{padding-left:8px}
+.portrait{transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.pbox:hover .portrait{transform:scale(1.04)}
+.seg{position:absolute;top:0;bottom:0;display:block;transform-origin:left}
+.rec-seg{background:repeating-linear-gradient(135deg,#E5484D 0 4px,#B42328 4px 7px)}
+.reel{background:#0B0B0C;color:#F2F2EF;border-radius:4px;overflow:hidden}
+.sprocket{height:22px;background-image:radial-gradient(circle,rgba(242,242,239,.22) 0 3.5px,transparent 4px);background-size:22px 22px;background-position:6px center}
+.clip{background:#0B0B0C;padding:28px;transition:background .5s}
+.clip:hover{background:#151517}
+.recdot{width:9px;height:9px;border-radius:50%;background:#E5484D;display:inline-block}
+.cue{display:inline-flex;align-items:center;height:26px;padding:0 10px;border:1px solid rgba(242,242,239,.3);border-radius:2px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#F2F2EF}
+.reel-link{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 28px;border-top:1px solid rgba(242,242,239,.12);color:#F2F2EF;text-decoration:none;font-size:15px;font-weight:500;transition:background .4s,color .4s}
+.reel-link:hover{background:var(--accent);color:#fff}
+.reel-link svg{transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.reel-link:hover svg{transform:translateX(6px)}
+.motion .recdot{animation:blink 1.2s steps(2,start) infinite}
+.motion .sprocket{animation:feed 2.4s linear infinite}
+@keyframes blink{to{visibility:hidden}}
+@keyframes feed{to{background-position:28px center}}
+.motion .mask>span{animation:up 1.15s cubic-bezier(.16,1,.3,1) both}
+.motion .fade{animation:fade 1.1s cubic-bezier(.16,1,.3,1) both}
+.motion .dot{animation:pulse 2.2s ease-in-out infinite}
+.d1{animation-delay:.1s!important}.d2{animation-delay:.22s!important}.d3{animation-delay:.38s!important}.d4{animation-delay:.52s!important}
+@keyframes up{from{transform:translateY(108%)}to{transform:none}}
+@keyframes fade{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(43,59,255,.45)}50%{box-shadow:0 0 0 7px rgba(43,59,255,0)}}
+.motion .track>i{animation:grow 1.4s cubic-bezier(.16,1,.3,1) .4s both}
+@supports (animation-timeline: view()){
+.motion .rv{animation:fade linear both;animation-timeline:view();animation-range:entry 0% cover 22%}
+.motion .wipe{animation:wipe linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+.motion .track>i{animation:grow linear both;animation-timeline:view();animation-range:entry 20% cover 40%}
+.motion .seg{animation:grow linear both;animation-timeline:view();animation-range:entry 10% cover 30%}
+}
+@media (min-width:1000px){.stick{position:sticky;top:104px}}
+@media (max-width:820px){
+.stack{grid-template-columns:minmax(0,1fr)!important}
+.hide-sm{display:none!important}
+.outline{-webkit-text-stroke:1.5px #0B0B0C}
+}
+@media (prefers-reduced-motion:reduce){.pf *,.pf *::after{animation:none!important;transition:none!important}}
+</style>
+<style>
+html{scroll-behavior:smooth}
+:focus-visible{outline:2px solid #2B3BFF;outline-offset:3px}
+.pf header{top:env(safe-area-inset-top,0px)!important}
+@keyframes fade{from{opacity:.15;transform:translateY(22px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="top" class="pf motion" style="--accent: #2B3BFF; min-height: 100vh">
+
+<header style="position: sticky; top: 0; z-index: 20; background: rgba(242,242,239,.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(11,11,12,.08)">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; flex-wrap: wrap">
+<a href="index.html" style="display: flex; align-items: baseline; gap: 14px; text-decoration: none; color: #0B0B0C">
+<span class="disp" style="font-size: 22px; letter-spacing: -0.03em; line-height: 1">Portfolio</span>
+<span class="mono hide-sm" style="color: #5C5C60; font-size: 11px">포트폴리오 2025 / UI/UX Designer</span>
+</a>
+<nav aria-label="주 메뉴" style="display: flex; align-items: center; gap: 32px; font-size: 15px; font-weight: 500">
+<a class="nl" href="index.html">Home</a>
+<a class="nl" href="about.html" aria-current="page" style="display: inline-flex; align-items: center; gap: 8px"><span class="dot" aria-hidden="true"></span>About</a>
+<a class="nl" href="projects.html">Projects</a>
+</nav>
+</div>
+</header>
+
+<section class="wrap" style="padding-top: clamp(56px, 9vw, 120px); padding-bottom: clamp(56px, 7vw, 96px)">
+<div class="fade d1" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid rgba(11,11,12,.16); padding-bottom: 20px">
+<span class="mono" style="display: inline-flex; align-items: center; gap: 10px"><span class="dot" aria-hidden="true"></span>포트폴리오 2025</span>
+<span class="mono hide-sm" style="color: #5C5C60">(01) — About</span>
+</div>
+<h1 class="disp" style="margin: 28px 0 0; font-size: clamp(84px, 17vw, 260px)">
+<span class="mask"><span class="d1">About</span> <span class="d2 outline">Me</span></span>
+</h1>
+<p class="fade d3" style="margin: clamp(32px, 4vw, 56px) 0 0; font-size: clamp(20px, 2.2vw, 30px); line-height: 1.45; font-weight: 500; letter-spacing: -0.03em; max-width: 760px">사용자 중심의 사고와 창의적 해결책으로 디지털 경험을 만들어가는 디자이너입니다</p>
+</section>
+
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: clamp(40px, 5vw, 80px); align-items: flex-start; padding-bottom: clamp(96px, 12vw, 160px)">
+
+<aside class="stick fade d4" style="flex: 1 1 300px; max-width: 380px; min-width: 0">
+<div class="pbox" style="overflow: hidden; border-radius: 4px; aspect-ratio: 4 / 5; background: #E4E4E0">
+<img class="portrait" src="images/portrait_hd.jpg" alt="김다애 프로필 사진" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%">
+</div>
+<p class="disp" style="margin: 24px 0 0; font-size: 34px; line-height: 1; color: var(--accent)">UI/UX Designer</p>
+<p style="margin: 14px 0 0; font-size: 15px; line-height: 1.7; color: #3A3A3E">4년 이상의 경험을 통해 사용자 중심의 디지털 경험을 설계합니다</p>
+<p class="mono" style="margin: 32px 0 4px; color: #5C5C60">연락처</p>
+<a class="contact" href="mailto:kimdae7621@naver.com">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 7l9 6 9-6"/></svg>
+<span style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 10px; color: #5C5C60">이메일</span><span style="font-size: 15px; font-weight: 500">kimdae7621@naver.com</span></span>
+</a>
+<a class="contact" href="tel:+821064167621">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+<span style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 10px; color: #5C5C60">전화</span><span style="font-size: 15px; font-weight: 500">+82 10-6416-7621</span></span>
+</a>
+<div class="contact" style="border-bottom: 1px solid rgba(11,11,12,.12)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+<span style="display: flex; flex-direction: column; gap: 2px"><span class="mono" style="font-size: 10px; color: #5C5C60">위치</span><span style="font-size: 15px; font-weight: 500">서울 송파구, 대한민국</span></span>
+</div>
+</aside>
+
+<main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: clamp(96px, 10vw, 144px)">
+
+<section>
+<div class="sec-h wipe">
+<h2 class="ko" style="margin: 0; font-size: clamp(44px, 5.4vw, 80px)">경력</h2>
+<span class="mono" style="color: #5C5C60">(02) Experience · 총 <span class="accent" style="font-weight: 500">4년 10개월</span></span>
+</div>
+
+<div class="rv" style="padding: 36px 0 8px">
+<div style="position: relative; height: 14px; background: rgba(11,11,12,.08)" role="img" aria-label="2020년 6월부터 현재까지의 경력 타임라인. UI/UX·기획 3곳, 영상 제작 2곳">
+<i class="seg" style="left: 0%; width: 50%; background: var(--accent)"></i>
+<i class="seg" style="left: 64.5%; width: 5.3%; background: var(--accent)"></i>
+<i class="seg rec-seg" style="left: 71.1%; width: 3.9%"></i>
+<i class="seg" style="left: 78.9%; width: 10.5%; background: var(--accent)"></i>
+<i class="seg rec-seg" style="left: 94.7%; width: 5.3%"></i>
+</div>
+<div class="mono" aria-hidden="true" style="position: relative; height: 20px; margin-top: 10px; font-size: 10px; color: #5C5C60">
+<span style="position: absolute; left: 0">2020</span><span style="position: absolute; left: 9.2%">2021</span><span style="position: absolute; left: 25%">2022</span><span style="position: absolute; left: 40.8%">2023</span><span style="position: absolute; left: 56.6%">2024</span><span style="position: absolute; left: 72.4%">2025</span><span class="hide-sm" style="position: absolute; left: 88.2%">2026</span>
+</div>
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 8px; font-size: 13px; color: #3A3A3E">
+<span style="display: inline-flex; align-items: center; gap: 8px"><i style="width: 18px; height: 8px; background: var(--accent); display: inline-block"></i>UI/UX · 기획</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><i class="rec-seg" style="width: 18px; height: 8px; display: inline-block; position: static"></i>영상 제작</span>
+</div>
+</div>
+
+<p class="mono" style="margin: 40px 0 0; color: #5C5C60">Track A — UI/UX · 기획</p>
+<div class="item rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 32px 0">
+<span class="mono" style="padding-top: 8px; line-height: 1.7">2025.06 – 2026.01<br><span style="color: #5C5C60">8개월</span></span>
+<div>
+<h3 class="item-t" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.03em">UI/UX 디자이너</h3>
+<p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: 0">주식회사 고퍼소프트 · 서울, 한국</p>
+<p style="margin: 16px 0 0; font-size: 16px; line-height: 1.75; color: #2A2A2E">이커머스 플랫폼 리디자인 프로젝트 수행. 구매 전환율 향상을 목표로 한 전면적인 사용자 경험 개선 및 A/B 테스트 기반의 최적화 작업 진행</p>
+</div>
+</div>
+<div class="item rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 32px 0">
+<span class="mono" style="padding-top: 8px; line-height: 1.7">2024.07 – 2024.10<br><span style="color: #5C5C60">4개월</span></span>
+<div>
+<h3 class="item-t" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.03em">웹기획 · UI/UX 기획</h3>
+<p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: 0">주식회사 로드시스템 · 서울, 한국</p>
+<p style="margin: 16px 0 0; font-size: 16px; line-height: 1.75; color: #2A2A2E">Trip.Pass 앱과 IM 택시 서비스 간의 연동 기획 총괄. 사용자 여정 지도, 에코시스템 지도, 어피니티 다이어그램 등 다양한 UX 방법론을 활용한 서비스 기획</p>
+</div>
+</div>
+<div class="item rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 32px 0">
+<span class="mono" style="padding-top: 8px; line-height: 1.7">2020.06 – 2023.07<br><span style="color: #5C5C60">3년 2개월</span></span>
+<div>
+<h3 class="item-t" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.03em">UI/UX 디자이너</h3>
+<p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: 0">주식회사 닷 (Dot Incorporation) · 서울, 한국</p>
+<p style="margin: 16px 0 0; font-size: 16px; line-height: 1.75; color: #2A2A2E">드로잉앱 기기 및 UI/UX 디자인, 고궁박물관 키오스크 UI/UX 디자인, 모바일 포트폴리오 앱 등 다양한 접근성 중심 디자인 프로젝트 수행</p>
+</div>
+</div>
+
+<p class="mono" style="margin: 56px 0 16px; color: #5C5C60">Track B — 영상 제작</p>
+<div class="reel rv">
+<div class="sprocket" aria-hidden="true"></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: rgba(242,242,239,.12)">
+<div class="clip">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span class="mono" style="display: inline-flex; align-items: center; gap: 8px; color: #FF6B6E"><span class="recdot" aria-hidden="true"></span>REC · 재직중</span>
+<span class="mono" style="color: #A6A6AC">CLIP 01</span>
+</div>
+<p class="mono" style="margin: 28px 0 0; color: #A6A6AC; text-transform: none">TC 2026.06 → NOW</p>
+<h3 style="margin: 10px 0 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 900; letter-spacing: -0.04em; line-height: 1.15">선한목자병원</h3>
+<p class="disp" style="margin: 12px 0 0; font-size: 18px; letter-spacing: -0.01em; line-height: 1.2; color: #F2F2EF">PD · Director</p>
+<p style="margin: 18px 0 0; font-size: 15px; line-height: 1.75; color: #D6D6D2">의학 유튜브 채널 이창우TV의 콘텐츠를 기획부터 업로드까지 맡고 있습니다.</p>
+<div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 20px">
+<span class="cue">촬영</span><span class="cue">편집</span><span class="cue">썸네일</span><span class="cue">업로드</span>
+</div>
+</div>
+<div class="clip">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span class="mono" style="display: inline-flex; align-items: center; gap: 8px; color: #A6A6AC"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><rect width="10" height="10" fill="currentColor"></rect></svg>STOP · 3개월</span>
+<span class="mono" style="color: #A6A6AC">CLIP 02</span>
+</div>
+<p class="mono" style="margin: 28px 0 0; color: #A6A6AC; text-transform: none">TC 2024.12 → 2025.02</p>
+<h3 style="margin: 10px 0 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 900; letter-spacing: -0.04em; line-height: 1.15">해시태그enm</h3>
+<p class="disp" style="margin: 12px 0 0; font-size: 18px; letter-spacing: -0.01em; line-height: 1.2; color: #F2F2EF">Video Editor</p>
+<p style="margin: 18px 0 0; font-size: 15px; line-height: 1.75; color: #D6D6D2">영상편집자로 영상 제작과 방송 기획에 참여했습니다.</p>
+<div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 20px">
+<span class="cue">영상제작</span><span class="cue">방송기획</span>
+</div>
+</div>
+</div>
+<div class="sprocket" aria-hidden="true"></div>
+<a class="reel-link" href="projects.html#video">영상 작업 보기
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</section>
+
+<section>
+<div class="sec-h wipe">
+<h2 class="ko" style="margin: 0; font-size: clamp(44px, 5.4vw, 80px)">학력</h2>
+<span class="mono" style="color: #5C5C60">(03) Education</span>
+</div>
+<div class="item rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 32px 0">
+<span class="mono" style="padding-top: 8px">2023 ~</span>
+<div>
+<h3 class="item-t" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.03em">게임학, 학사</h3>
+<p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: 0">유타대학교</p>
+<p style="margin: 16px 0 0; font-size: 16px; line-height: 1.75; color: #2A2A2E">게임 디자인과 개발 분야의 전문적인 지식을 쌓으며 인터랙티브 미디어에 대한 이해를 넓혔습니다. 현재는 업무 집중을 위해 휴학 중입니다.</p>
+</div>
+</div>
+<div class="item rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 32px 0">
+<span class="mono" style="padding-top: 8px">2018 ~ 2020</span>
+<div>
+<h3 class="item-t" style="margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.03em">motion media design, 학사</h3>
+<p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: 0">Savannah College of Art and Design (SCAD)</p>
+<p style="margin: 16px 0 0; font-size: 16px; line-height: 1.75; color: #2A2A2E">코로나로 인한 중퇴. UX 디자인과 모션 디자인을 겸하여 전공하며 디지털 미디어와 사용자 경험에 대한 전문 지식을 습득했습니다</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="sec-h wipe">
+<h2 class="ko" style="margin: 0; font-size: clamp(44px, 5.4vw, 80px)">기술 스택</h2>
+<span class="mono" style="color: #5C5C60">(04) Skills</span>
+</div>
+
+<div class="rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 36px 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<h3 class="mono" style="margin: 0; padding-top: 4px; font-weight: 500">Design Tools</h3>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px">
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Figma</span><span class="mono">95%</span></div><div class="track"><i style="width: 95%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Adobe Photoshop</span><span class="mono">90%</span></div><div class="track"><i style="width: 90%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Adobe Illustrator</span><span class="mono">88%</span></div><div class="track"><i style="width: 88%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Adobe After Effects</span><span class="mono">85%</span></div><div class="track"><i style="width: 85%"></i></div></div>
+</div>
+</div>
+
+<div class="rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 36px 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<h3 class="mono" style="margin: 0; padding-top: 4px; font-weight: 500">UX Research</h3>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px">
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>User Journey Mapping</span><span class="mono">95%</span></div><div class="track"><i style="width: 95%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Ecosystem Mapping</span><span class="mono">90%</span></div><div class="track"><i style="width: 90%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Affinity Diagram</span><span class="mono">92%</span></div><div class="track"><i style="width: 92%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>User Interview</span><span class="mono">88%</span></div><div class="track"><i style="width: 88%"></i></div></div>
+</div>
+</div>
+
+<div class="rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 36px 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<h3 class="mono" style="margin: 0; padding-top: 4px; font-weight: 500">Prototyping</h3>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px">
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Wireframing</span><span class="mono">90%</span></div><div class="track"><i style="width: 90%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>Prototyping</span><span class="mono">88%</span></div><div class="track"><i style="width: 88%"></i></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 15px; font-weight: 500"><span>A/B Testing</span><span class="mono">85%</span></div><div class="track"><i style="width: 85%"></i></div></div>
+</div>
+</div>
+
+<div class="rv stack" style="display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; padding: 36px 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<h3 class="mono" style="margin: 0; padding-top: 4px; font-weight: 500">Programming</h3>
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<span style="display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px; border: 1px solid rgba(11,11,12,.22); border-radius: 999px"><span style="font-size: 15px; font-weight: 700">Python</span><span class="pill">기본 지식</span></span>
+<span style="display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px; border: 1px solid rgba(11,11,12,.22); border-radius: 999px"><span style="font-size: 15px; font-weight: 700">HTML/CSS</span><span class="pill">기본 지식</span></span>
+</div>
+</div>
+</section>
+
+<section>
+<div class="sec-h wipe">
+<h2 class="ko" style="margin: 0; font-size: clamp(44px, 5.4vw, 80px)">자기소개</h2>
+<span class="mono" style="color: #5C5C60">(05) Profile</span>
+</div>
+
+<div class="rv" style="padding: clamp(40px, 5vw, 64px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<h3 style="margin: 0; font-size: clamp(30px, 3.6vw, 52px); font-weight: 900; letter-spacing: -0.05em; line-height: 1.15">기획부터 디자인,<br><span class="accent">커뮤니케이션까지</span></h3>
+<p style="margin: 24px 0 0; font-size: 18px; line-height: 1.75; color: #2A2A2E; max-width: 640px">안녕하세요. 기획부터 디자인, 커뮤니케이션까지 전 과정을 고려하는 사용자 중심 디자이너입니다.</p>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">01</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">접근성 디자인 전문성</h3>
+<div style="font-size: 16px; line-height: 1.8; color: #2A2A2E">
+<p style="margin: 0">기획팀에서 디자이너로 근무하며 시각장애인을 위한 키오스크 소프트웨어 기획과 자동화 디자인 기획에 80% 이상 참여했습니다. 접근성을 고려한 UI 흐름을 기획하며, 실사용자 중심의 정보 구조와 인터랙션을 설계했습니다.</p>
+<p style="margin: 14px 0 0">이후 시각장애인을 위한 서비스 웹앱의 IA(정보구조), 화면 설계, 초기 UX/UI 디자인을 수행하며, 접근성 디자인 체계를 실제 업무에 적용하고 발전시킬 수 있었습니다.</p>
+</div>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">02</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">웹·앱 디자인 전문성</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #2A2A2E">웹디자인과 앱디자인 분야에서 특별한 경험을 쌓았습니다. 4년간 회사 웹사이트와 대시보드가 포함된 서비스 웹사이트, 특정 특허 기술이 적용된 일회성 키오스크 웹디자인을 담당하며 복잡한 요구사항과 기술적 제약 조건을 디자인으로 해결하는 풍부한 경험을 보유하고 있습니다.</p>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">03</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">디자인 시스템</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #2A2A2E">디자인 시스템 구축 및 운영 경험이 있습니다. 팀 내에서 디자인 언어의 일관성을 유지하고 재사용 가능한 컴포넌트를 체계화하여 개발자와의 커뮤니케이션을 효율화했습니다.</p>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">04</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">데이터 기반 기획</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #2A2A2E">기획자로서 데이터 기반 의사결정을 중시합니다. 사용자 페르소나 정의, 사용자 여정 지도, 유저 인터뷰를 통한 정량적·정성적 인사이트 도출 등 체계적인 리서치 기반 전략 수립 능력을 갖추고 있습니다.</p>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">05</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">AI 활용 역량</h3>
+<div style="font-size: 16px; line-height: 1.8; color: #2A2A2E">
+<p style="margin: 0">AI를 잘 다루는 사람이 가장 성공하는 시대라고 생각합니다. 저는 AI에 단순히 자연어로 요청하는 것이 아닌, AI가 데이터를 처리하는 방식을 이해하여 프롬프트를 기획하고 구성합니다.</p>
+<p style="margin: 14px 0 0">명령의 우선순위와 순서를 고려한 체계적인 프롬프트 작성을 통해 정확도와 효율성이 높은 결과물을 도출하고 있습니다. 주로 Claude와 Whisk를 활용하며, AI 프롬프트 엔지니어링에 대한 지속적인 학습과 실무 적용을 통해 업무 생산성을 극대화하고 있습니다.</p>
+</div>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">06</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">기술적 백그라운드</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #2A2A2E">대학교에서 게임개발(파이썬)을 학습한 경험을 통해 알고리즘 사고와 논리적 구조화 능력을 길렀으며, HTML/CSS의 기본 구조에 대한 이해를 바탕으로 개발자와의 원활한 소통이 가능합니다.</p>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">07</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">협업 &amp; 소프트 스킬</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #2A2A2E">업무 과정에서 발생하는 이해관계자 간의 의견 충돌 상황에서는 데이터 기반 논리와 사용자 중심 관점을 활용한 합리적 조율을 통해 감정적 대립을 생산적 협업으로 전환해왔습니다.</p>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">08</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">다양한 프로젝트 경험</h3>
+<div style="font-size: 16px; line-height: 1.8; color: #2A2A2E">
+<p style="margin: 0">프로젝트 포트폴리오로는 '다가치 나란히' 앱, 고궁박물관 앱, 드로잉 앱, 배리어프리 카페 키오스크 앱, 외국인을 위한 택시호출 앱, AI 이커머스 서비스 등 다양한 영역의 단독 기획 및 UI/UX 디자인 경험을 보유하고 있습니다.</p>
+<p style="margin: 14px 0 0">특히 디지털 치료제 및 시각장애인을 위한 미술 심리치료 앱 등 소셜 임팩트가 있는 프로젝트를 통해 포용적 디자인과 접근성에 대한 전문성을 심화했습니다.</p>
+</div>
+</div>
+
+<div class="item rv stack" style="display: grid; grid-template-columns: 56px minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding: 36px 0">
+<span class="mono" style="color: var(--accent); padding-top: 6px">09</span>
+<h3 class="item-t" style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.03em">툴 활용 &amp; 미래 비전</h3>
+<div style="font-size: 16px; line-height: 1.8; color: #2A2A2E">
+<p style="margin: 0">툴 활용 측면에서는 Figma, Adobe XD, Zeplin, PowerPoint, After Effects 등 업계 표준 도구들을 프로젝트 특성과 협업 환경에 맞게 선택적으로 활용하며, 새로운 도구와 워크플로우에 대한 빠른 적응력을 갖추고 있습니다.</p>
+<p style="margin: 14px 0 0">앞으로도 저는 심미적 완성도를 넘어 진정한 사용자 가치를 창출하는 디자이너로 성장하고자 합니다. 사용자 중심 사고, 데이터 기반 의사결정, AI 활용 역량, 그리고 협업 능력을 바탕으로 팀의 성과와 사용자 만족도 향상에 기여하는 디자이너로 성장하겠습니다.</p>
+</div>
+</div>
+</section>
+
+</main>
+</div>
+
+<footer class="wrap" style="padding-top: clamp(72px, 9vw, 120px); padding-bottom: 40px; border-top: 1px solid rgba(11,11,12,.16)">
+<div class="disp wipe" aria-hidden="true" style="font-size: clamp(80px, 17vw, 260px); line-height: .8">Portfolio<span class="accent">.</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(11,11,12,.16)">
+<p style="margin: 0; font-size: 15px; display: inline-flex; align-items: center; gap: 8px">Made with
+<svg width="16" height="16" viewBox="0 0 24 24" fill="#E5484D" aria-label="사랑" role="img"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3.1 4.5 6.9 4.5c2.1 0 3.6 1.1 5.1 2.9 1.5-1.8 3-2.9 5.1-2.9 3.8 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
+by UI/UX Designer</p>
+<p class="mono" style="margin: 0; color: #5C5C60; text-transform: none">© 2025 Portfolio. All rights reserved.</p>
+<a class="circ" href="#top" aria-label="맨 위로">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</a>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
