@@ -41,6 +41,7 @@ a{color:#0B0B0C}a:hover{color:#2B3BFF}
 .pbox:hover .portrait{transform:scale(1.04)}
 .seg{position:absolute;top:0;bottom:0;display:block;transform-origin:left}
 .rec-seg{background:repeating-linear-gradient(135deg,#E5484D 0 4px,#B42328 4px 7px)}
+.par-seg{background:rgba(229,72,77,.12);border:1.5px dashed #D93F44;box-sizing:border-box}
 .reel{background:#0B0B0C;color:#F2F2EF;border-radius:4px;overflow:hidden}
 .sprocket{height:22px;background-image:radial-gradient(circle,rgba(242,242,239,.22) 0 3.5px,transparent 4px);background-size:22px 22px;background-position:6px center}
 .clip{background:#0B0B0C;padding:28px;transition:background .5s}
@@ -142,16 +143,21 @@ html{scroll-behavior:smooth}
 <section>
 <div class="sec-h wipe">
 <h2 class="ko" style="margin: 0; font-size: clamp(44px, 5.4vw, 80px)">경력</h2>
-<span class="mono" style="color: #5C5C60">(02) Experience · 총 <span class="accent" style="font-weight: 500">4년 10개월</span></span>
+<span class="mono" style="color: #5C5C60">(02) Experience · 총 <span class="accent" style="font-weight: 500">4년 8개월</span></span>
 </div>
 
 <div class="rv" style="padding: 36px 0 8px">
-<div style="position: relative; height: 14px; background: rgba(11,11,12,.08)" role="img" aria-label="2020년 6월부터 현재까지의 경력 타임라인. UI/UX·기획 3곳, 영상 제작 2곳">
+<div role="img" aria-label="2020년 6월부터의 경력 타임라인. 윗줄은 UI/UX·기획 3곳, 아랫줄은 영상 제작 2곳과 닷 재직 중 약 1년 6개월 병행한 영상 작업" style="display: flex; flex-direction: column; gap: 6px">
+<div style="position: relative; height: 12px; background: rgba(11,11,12,.08)">
 <i class="seg" style="left: 0%; width: 50%; background: var(--accent)"></i>
 <i class="seg" style="left: 64.5%; width: 5.3%; background: var(--accent)"></i>
-<i class="seg rec-seg" style="left: 71.1%; width: 3.9%"></i>
 <i class="seg" style="left: 78.9%; width: 10.5%; background: var(--accent)"></i>
-<i class="seg rec-seg" style="left: 94.7%; width: 5.3%"></i>
+</div>
+<div style="position: relative; height: 12px; background: rgba(11,11,12,.08)">
+<i class="seg par-seg" style="left: 0%; width: 50%"></i>
+<i class="seg rec-seg" style="left: 71.1%; width: 3.9%"></i>
+<i class="seg rec-seg" style="left: 94.7%; width: 3.9%"></i>
+</div>
 </div>
 <div class="mono" aria-hidden="true" style="position: relative; height: 20px; margin-top: 10px; font-size: 10px; color: #5C5C60">
 <span style="position: absolute; left: 0">2020</span><span style="position: absolute; left: 9.2%">2021</span><span style="position: absolute; left: 25%">2022</span><span style="position: absolute; left: 40.8%">2023</span><span style="position: absolute; left: 56.6%">2024</span><span style="position: absolute; left: 72.4%">2025</span><span class="hide-sm" style="position: absolute; left: 88.2%">2026</span>
@@ -159,6 +165,7 @@ html{scroll-behavior:smooth}
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 8px; font-size: 13px; color: #3A3A3E">
 <span style="display: inline-flex; align-items: center; gap: 8px"><i style="width: 18px; height: 8px; background: var(--accent); display: inline-block"></i>UI/UX · 기획</span>
 <span style="display: inline-flex; align-items: center; gap: 8px"><i class="rec-seg" style="width: 18px; height: 8px; display: inline-block; position: static"></i>영상 제작</span>
+<span style="display: inline-flex; align-items: center; gap: 8px"><i class="par-seg" style="width: 18px; height: 8px; display: inline-block; position: static; box-sizing: border-box"></i>닷 재직 중 영상 병행 (약 1년 6개월)</span>
 </div>
 </div>
 
@@ -191,16 +198,16 @@ html{scroll-behavior:smooth}
 <p class="mono" style="margin: 56px 0 16px; color: #5C5C60">Track B — 영상 제작</p>
 <div class="reel rv">
 <div class="sprocket" aria-hidden="true"></div>
-<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; background: rgba(242,242,239,.12)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; background: rgba(242,242,239,.12)">
 <div class="clip">
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
-<span class="mono" style="display: inline-flex; align-items: center; gap: 8px; color: #FF6B6E"><span class="recdot" aria-hidden="true"></span>REC · 재직중</span>
+<span class="mono" style="display: inline-flex; align-items: center; gap: 8px; color: #A6A6AC"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><rect width="10" height="10" fill="currentColor"></rect></svg>STOP · 3개월</span>
 <span class="mono" style="color: #A6A6AC">CLIP 01</span>
 </div>
-<p class="mono" style="margin: 28px 0 0; color: #A6A6AC; text-transform: none">TC 2026.06 → NOW</p>
+<p class="mono" style="margin: 28px 0 0; color: #A6A6AC; text-transform: none">TC 2026.06 → 2026.08</p>
 <h3 style="margin: 10px 0 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 900; letter-spacing: -0.04em; line-height: 1.15">선한목자병원</h3>
 <p class="disp" style="margin: 12px 0 0; font-size: 18px; letter-spacing: -0.01em; line-height: 1.2; color: #F2F2EF">PD · Director</p>
-<p style="margin: 18px 0 0; font-size: 15px; line-height: 1.75; color: #D6D6D2">의학 유튜브 채널 이창우TV의 콘텐츠를 기획부터 업로드까지 맡고 있습니다.</p>
+<p style="margin: 18px 0 0; font-size: 15px; line-height: 1.75; color: #D6D6D2">의학 유튜브 채널 이창우TV의 콘텐츠를 기획부터 업로드까지 맡았습니다.</p>
 <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 20px">
 <span class="cue">촬영</span><span class="cue">편집</span><span class="cue">썸네일</span><span class="cue">업로드</span>
 </div>
@@ -216,6 +223,19 @@ html{scroll-behavior:smooth}
 <p style="margin: 18px 0 0; font-size: 15px; line-height: 1.75; color: #D6D6D2">영상편집자로 영상 제작과 방송 기획에 참여했습니다.</p>
 <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 20px">
 <span class="cue">영상제작</span><span class="cue">방송기획</span>
+</div>
+</div>
+<div class="clip">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span class="mono" style="display: inline-flex; align-items: center; gap: 8px; color: #A6A6AC; white-space: nowrap"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><rect width="10" height="10" fill="currentColor"></rect></svg>STOP · 1년 6개월</span>
+<span class="mono" style="color: #A6A6AC; white-space: nowrap">CLIP 03</span>
+</div>
+<p class="mono" style="margin: 28px 0 0; color: #A6A6AC; text-transform: none">TC 2020.06 → 2023.07 중</p>
+<h3 style="margin: 10px 0 0; font-size: clamp(26px, 2.6vw, 34px); font-weight: 900; letter-spacing: -0.04em; line-height: 1.15">주식회사 닷</h3>
+<p class="disp" style="margin: 12px 0 0; font-size: 18px; letter-spacing: -0.01em; line-height: 1.2; color: #F2F2EF">Video × UI/UX</p>
+<p style="margin: 18px 0 0; font-size: 15px; line-height: 1.75; color: #D6D6D2">UI/UX 디자이너로 일하면서 약 1년 6개월 동안 영상 제작을 함께 맡았습니다.</p>
+<div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 20px">
+<span class="cue">영상제작</span><span class="cue">UI/UX 병행</span>
 </div>
 </div>
 </div>
