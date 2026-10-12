@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Projects · 김다애 포트폴리오</title>
-<meta name="description" content="김다애 UI/UX 디자이너 포트폴리오">
+<meta name="description" content="김다애 UI/UX · Content Designer 포트폴리오. 접근성 UI/UX, 서비스 기획, 영상 콘텐츠 작업.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=JetBrains+Mono:wght@400;500&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
@@ -64,6 +64,16 @@ a{color:#0B0B0C}a:hover{color:#2B3BFF}
 .vtitle{transition:color .3s}
 .vcard:hover .vtitle{color:var(--accent)}
 .vcard:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
+.tvcase .vcard,.tvcase .vcard:hover{color:#F2F2EF}
+.tvcase .vcard:hover .vtitle{color:#8F9BFF}
+.steps li{background:#1C1C20;padding:14px 12px;font-size:15px;font-weight:700;display:flex;flex-direction:column;gap:6px;transition:background .4s}
+.steps li .mono{font-size:10px;color:#A6A6AC;font-weight:400}
+.steps li:hover{background:var(--accent)}
+.steps li:hover .mono{color:#fff}
+.stat{border-top:2px solid var(--accent);background:#1C1C20;padding:16px;border-radius:2px;min-width:0}
+.stat-n{margin:0;font-family:'Archivo','Noto Sans KR',sans-serif;font-stretch:125%;font-weight:800;font-size:clamp(22px,2.4vw,32px);line-height:1;color:#F2F2EF}
+.stat-l{margin:10px 0 0;font-size:12px;line-height:1.5;color:#A6A6AC}
+@media (max-width:640px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 .motion .mask>span{animation:up 1.15s cubic-bezier(.16,1,.3,1) both}
 .motion .fade{animation:fade 1.1s cubic-bezier(.16,1,.3,1) both}
 .motion .dot{animation:pulse 2.2s ease-in-out infinite}
@@ -94,6 +104,7 @@ a{color:#0B0B0C}a:hover{color:#2B3BFF}
 </style>
 <style>
 html{scroll-behavior:smooth}
+[hidden]{display:none!important}
 :focus-visible{outline:2px solid #2B3BFF;outline-offset:3px}
 .pf header{top:env(safe-area-inset-top,0px)!important}
 @keyframes fade{from{opacity:.15;transform:translateY(22px)}to{opacity:1;transform:none}}
@@ -105,8 +116,8 @@ html{scroll-behavior:smooth}
 <header style="position: sticky; top: 0; z-index: 20; background: rgba(242,242,239,.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(11,11,12,.08)">
 <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 72px; flex-wrap: wrap">
 <a href="index.html" style="display: flex; align-items: baseline; gap: 14px; text-decoration: none; color: #0B0B0C">
-<span class="disp" style="font-size: 22px; letter-spacing: -0.03em; line-height: 1">Portfolio</span>
-<span class="mono hide-sm" style="color: #5C5C60; font-size: 11px">포트폴리오 2026 / UI/UX Designer</span>
+<span class="ko" style="font-size: 22px; letter-spacing: -0.05em; line-height: 1">김다애</span>
+<span class="mono hide-sm" style="color: #5C5C60; font-size: 11px">포트폴리오 2026 / UI/UX · Content Designer</span>
 </a>
 <nav aria-label="주 메뉴" style="display: flex; align-items: center; gap: 32px; font-size: 15px; font-weight: 500">
 <a class="nl" href="index.html">Home</a>
@@ -124,7 +135,8 @@ html{scroll-behavior:smooth}
 <h1 class="disp" style="margin: 28px 0 0; font-size: clamp(84px, 17vw, 260px); display: flex; align-items: flex-start; gap: .08em">
 <span class="mask"><span class="d1">Projects</span></span><span class="mono fade d3" style="font-size: clamp(14px, 1.6vw, 22px); letter-spacing: 0; margin-top: .4em; color: var(--accent)">(08)</span>
 </h1>
-<p class="fade d3" style="margin: clamp(32px, 4vw, 56px) 0 0; font-size: clamp(20px, 2.2vw, 30px); line-height: 1.45; font-weight: 500; letter-spacing: -0.03em; max-width: 760px">다양한 프로젝트를 통해 사용자 경험을 개선하고 비즈니스 가치를 창출한 사례들입니다</p>
+<p class="fade d3" style="margin: clamp(32px, 4vw, 56px) 0 0; font-size: clamp(20px, 2.2vw, 30px); line-height: 1.45; font-weight: 500; letter-spacing: -0.03em; max-width: 760px">접근성 앱과 키오스크, 서비스 기획, 이커머스, 그리고 영상까지. 실무에서 직접 맡았던 작업들입니다.</p>
+<p class="mono fade d4" style="margin: 20px 0 0; color: #5C5C60">개인 작품 1 · 실무 프로젝트 7 · 영상 5</p>
 </section>
 
 <section aria-labelledby="gg-title" style="background: #0B0B0C; color: #F2F2EF; padding-top: clamp(80px, 10vw, 140px); padding-bottom: clamp(80px, 10vw, 140px); overflow: hidden">
@@ -202,7 +214,51 @@ html{scroll-behavior:smooth}
 <p class="mono" style="margin: 0; color: #5C5C60">05 Films</p>
 </div>
 
-<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); margin-top: clamp(40px, 5vw, 64px)">
+<article class="tvcase rv" aria-labelledby="tv-title" style="margin-top: clamp(40px, 5vw, 64px); background: #0B0B0C; color: #F2F2EF; border-radius: 4px; padding: clamp(24px, 4vw, 56px)">
+<div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 1px solid rgba(242,242,239,.18)">
+<span class="mono" style="display: inline-flex; align-items: center; gap: 10px; color: #F2F2EF"><span class="dot" aria-hidden="true"></span>Featured Case — 콘텐츠 PD</span>
+<span class="mono" style="color: #A6A6AC">선한목자병원 · 2026.06 – 2026.08 · 3개월</span>
+</div>
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 64px); margin-top: clamp(28px, 4vw, 48px)">
+<div style="min-width: 0">
+<h3 id="tv-title" class="ko" style="margin: 0; font-size: clamp(48px, 6vw, 88px)">이창우<span class="accent">TV</span></h3>
+<p class="disp" style="margin: 14px 0 0; font-size: 20px; line-height: 1.2">PD · Director</p>
+<p style="margin: 20px 0 0; font-size: 17px; line-height: 1.8; color: #D6D6D2">정형외과·스포츠의학 유튜브 채널 이창우TV에서 PD로 일하며, 영상 한 편이 업로드되기까지의 전 과정을 맡았습니다.</p>
+<p class="mono" style="margin: 32px 0 12px; color: #A6A6AC">맡은 과정</p>
+<ol class="steps" style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px">
+<li><span class="mono">01</span>기획</li><li><span class="mono">02</span>촬영</li><li><span class="mono">03</span>편집</li><li><span class="mono">04</span>썸네일</li><li><span class="mono">05</span>업로드</li>
+</ol>
+<p class="mono" style="margin: 32px 0 12px; color: #A6A6AC">성과</p>
+<div class="stack" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+<div class="stat"><p class="stat-n">6만</p><p class="stat-l">채널 구독자</p></div>
+<div class="stat"><p class="stat-n">4.5만</p><p class="stat-l">숏츠 조회수</p></div>
+<div class="stat"><p class="stat-n">2.1만</p><p class="stat-l">롱폼 조회수</p></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px; min-width: 0">
+<a class="vcard" href="https://www.youtube.com/watch?v=ECfvq9ygD8M">
+<div class="vthumb" style="background: #1C1C20">
+<span class="vnum disp" aria-hidden="true">04</span>
+<span class="vplay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+<span class="mono" style="position: relative; color: #F2F2EF">YouTube</span>
+</div>
+<p class="vtitle" style="margin: 14px 0 0; font-size: 17px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.45">무릎주사 맞기 전 꼭 물어볼 3가지｜연골주사·스테로이드·PRP 차이</p>
+<p class="mono" style="margin: 8px 0 0; color: #A6A6AC; text-transform: none">롱폼 · 조회수 2.1만 · 촬영 및 편집</p>
+</a>
+<a class="vcard" href="https://www.youtube.com/watch?v=9It4L-M5Z40">
+<div class="vthumb" style="background: #1C1C20">
+<span class="vnum disp" aria-hidden="true">05</span>
+<span class="vplay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+<span class="mono" style="position: relative; color: #F2F2EF">YouTube Shorts</span>
+</div>
+<p class="vtitle" style="margin: 14px 0 0; font-size: 17px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.45">스쿼트할 때 무릎이 발끝을 넘으면 안 된다? 90%가 오해하고 있는 부하의 진실</p>
+<p class="mono" style="margin: 8px 0 0; color: #A6A6AC; text-transform: none">숏츠 · 조회수 4.5만 · 촬영 및 편집</p>
+</a>
+</div>
+</div>
+</article>
+
+<div class="stack" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); margin-top: clamp(48px, 6vw, 80px)">
 <a class="vcard rv" href="https://vimeo.com/389892811">
 <div class="vthumb">
 <span class="vnum disp" aria-hidden="true">01</span>
@@ -221,9 +277,6 @@ html{scroll-behavior:smooth}
 <h3 class="vtitle" style="margin: 18px 0 0; font-size: clamp(20px, 2vw, 26px); font-weight: 700; letter-spacing: -0.03em">Space Travel</h3>
 <p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">Motion Graphics · Destiny Kim</p>
 </a>
-</div>
-
-<div class="stack" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); margin-top: clamp(32px, 4vw, 56px)">
 <a class="vcard rv" href="https://www.youtube.com/watch?v=ifOe5J6lWyE">
 <div class="vthumb">
 <span class="vnum disp" aria-hidden="true">03</span>
@@ -232,24 +285,6 @@ html{scroll-behavior:smooth}
 </div>
 <h3 class="vtitle" style="margin: 18px 0 0; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.45">Touch your world. | Dot Pad</h3>
 <p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">Dot Inc.</p>
-</a>
-<a class="vcard rv" href="https://www.youtube.com/watch?v=9It4L-M5Z40">
-<div class="vthumb">
-<span class="vnum disp" aria-hidden="true">04</span>
-<span class="vplay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-<span class="mono" style="position: relative; color: #F2F2EF">YouTube Shorts</span>
-</div>
-<h3 class="vtitle" style="margin: 18px 0 0; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.45">스쿼트할 때 무릎이 발끝을 넘으면 안 된다? 90%가 오해하고 있는 부하의 진실</h3>
-<p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">선한목자병원 이창우 TV</p>
-</a>
-<a class="vcard rv" href="https://www.youtube.com/watch?v=ECfvq9ygD8M">
-<div class="vthumb">
-<span class="vnum disp" aria-hidden="true">05</span>
-<span class="vplay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-<span class="mono" style="position: relative; color: #F2F2EF">YouTube</span>
-</div>
-<h3 class="vtitle" style="margin: 18px 0 0; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.45">무릎주사 맞기 전 꼭 물어볼 3가지｜연골주사·스테로이드·PRP 차이</h3>
-<p class="mono" style="margin: 8px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">선한목자병원 이창우 TV</p>
 </a>
 </div>
 </section>
@@ -261,20 +296,166 @@ html{scroll-behavior:smooth}
 <h2 class="ko wipe" style="margin: 16px 0 0; font-size: clamp(44px, 5.4vw, 80px)">실무 프로젝트</h2>
 </div>
 <div role="group" aria-label="프로젝트 분류" style="display: flex; gap: 8px; flex-wrap: wrap">
-<span id="filters" style="display: contents"></span>
+<span id="filters" style="display: contents"><button type="button" class="tab on" aria-pressed="true" data-f="all">All<span class="cnt">7</span></button><button type="button" class="tab" aria-pressed="false" data-f="web">Web &amp; Mobile<span class="cnt">3</span></button><button type="button" class="tab" aria-pressed="false" data-f="planning">Planning<span class="cnt">1</span></button><button type="button" class="tab" aria-pressed="false" data-f="backend">Backend<span class="cnt">2</span></button><button type="button" class="tab" aria-pressed="false" data-f="kiosk">Kiosk<span class="cnt">1</span></button></span>
 </div>
 </div>
 
-<div id="cards" style="display: flex; flex-direction: column"></div>
+<div id="cards" style="display: flex; flex-direction: column">
+<article class="pcard" data-cat="web" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">
+<div class="pimg"><img src="images/p1.jpg" alt="이커머스 셀러 대시보드 화면 두 장" loading="lazy"></div>
+<div style="min-width: 0">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">01</span><span class="badge solid">Web &amp; Mobile Design</span><span class="badge">Featured</span><span class="badge">기여도 100%</span></div>
+<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">이커머스 플랫폼 리디자인</h3>
+<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">주식회사 고퍼소프트 · 2025</p>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">구매 전환율 향상을 목표로 한 이커머스 플랫폼의 전면적인 리디자인 프로젝트입니다. 사용자 여정을 분석하고 최적화하여 비즈니스 목표를 달성했습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)"><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Duration</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">4주</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Team</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">주식회사 고퍼소프트</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Role</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">Senior UI/UX Designer</p></div></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px"><span class="tag">Web Design</span><span class="tag">E-commerce</span><span class="tag">Conversion Optimization</span><span class="tag">Data Analysis</span></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="ecom" aria-expanded="false" aria-controls="d-ecom"><span class="lbl">자세히 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></div>
+</div>
+</div>
+<div class="open-in" id="d-ecom" hidden style="margin-top: clamp(40px, 5vw, 64px)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px"><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">01</span>핵심 문제점 및 목표</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>기존 플랫폼은 복잡한 다단계 주문 관리 인터페이스와 직관적이지 않은 정보 구조로 인해 사용자 이탈이 발생하고 핵심 기능 접근성이 저하되었습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>특히 반복 작업이 많은 상품 등록 프로세스의 비효율성과 모바일 환경에서의 제한적인 사용성이 주요 문제로 지적되었습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>이에 구매대행 셀러들의 워크플로우를 깊이 이해하고 AI 자동화를 통한 효율적인 인터페이스 설계로 업무 생산성 향상을 목표로 설정했습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">02</span>사용자 리서치 및 분석</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>기존 사용자들과의 심층 인터뷰와 워크플로우 분석을 통해 반복적인 작업에서 발생하는 주요 시간 소모 지점을 식별했습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>사용자 행동 패턴 분석을 통해 가장 빈번하게 사용되는 기능들을 우선순위로 배치하고, 접근성을 향상시켰습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>A/B 테스트를 통해 새로운 인터페이스의 효과를 측정하고, 데이터 기반의 지속적인 개선을 진행했습니다.</span></div></div></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">
+<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">기존 시스템의 복잡한 구조와 낮은 전환율 문제를 해결하면서도 기존 사용자들의 사용 패턴을 크게 방해하지 않는 개선방안이 필요했습니다.</p></div>
+<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">A/B 테스트와 사용자 행동 분석을 통해 단계별로 개선사항을 적용했습니다. 체크아웃 프로세스를 단순화하고, 상품 발견성을 높이는 검색 및 필터링 시스템을 구축했습니다.</p></div>
+</div>
+</div>
+</article>
+<article class="pcard" data-cat="planning" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">
+<div class="pimg"><img src="images/p2.jpg" alt="야간 도로 위 택시 표시등 사진" loading="lazy"></div>
+<div style="min-width: 0">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">02</span><span class="badge solid">App Planning</span><span class="badge">Featured</span><span class="badge">기여도 100%</span></div>
+<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">IM 택시 서비스 연동 기획</h3>
+<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">주식회사 로드시스템 · 2024</p>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">자사 Trip.Pass 앱과 IM 택시 서비스 간의 성공적인 결합 및 연동을 위한 서비스 기획 총괄 프로젝트입니다. 사용자 경험 최적화와 서비스 경쟁력 강화를 목표로 진행되었습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)"><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Duration</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">3주</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Team</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">주식회사 로드시스템</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Role</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">Service Planning Lead</p></div></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px"><span class="tag">App Planning</span><span class="tag">Service Design</span><span class="tag">UX Research</span><span class="tag">Prototyping</span><span class="tag">Figma</span></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="taxi" aria-expanded="false" aria-controls="d-taxi"><span class="lbl">자세히 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></div>
+</div>
+</div>
+<div class="open-in" id="d-taxi" hidden style="margin-top: clamp(40px, 5vw, 64px)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px"><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">01</span>사용자 리서치 강화</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>사용자 여정 지도(User Journey Map)를 통해 기존 Trip.Pass 앱 사용자의 여행 패턴과 택시 이용 경험을 분석하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>에코시스템 지도(Ecosystem Map)를 활용하여 Trip.Pass와 IM 택시 서비스 간의 상호작용과 연동 지점을 명확히 정의하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>어피니티 다이어그램(Affinity Diagram)을 통해 사용자 피드백과 요구사항을 체계적으로 분류하고 핵심 사용자 니즈를 도출하였습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">02</span>서비스 로직 및 플로우 설계</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>정의된 사용자 및 비즈니스 요구사항을 바탕으로 Trip.Pass 앱 내 택시 서비스 연동을 위한 최적의 서비스 로직을 설계하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>FIGMA를 활용하여 사용자 인터페이스 프로토타이핑을 진행하고, 직관적인 서비스 연동 경험을 구현하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>PPT를 활용한 상세한 기획 문서를 작성하여 개발팀과 이해관계자들 간의 원활한 소통을 지원하였습니다.</span></div></div></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">
+<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">Trip.Pass 앱과 IM 택시 서비스라는 서로 다른 플랫폼 간의 연동에서 일관된 사용자 경험을 제공하면서도 각 서비스의 특성을 유지하는 것이 가장 큰 과제였습니다.</p></div>
+<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">사용자 리서치를 통해 핵심 터치포인트를 식별하고, 단계적 연동 방식을 통해 사용자가 자연스럽게 두 서비스를 이용할 수 있도록 설계했습니다. FIGMA 프로토타이핑으로 실제 구현 전 사용성을 검증했습니다.</p></div>
+</div>
+</div>
+</article>
+<article class="pcard" data-cat="backend" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">
+<div class="pimg"><img src="images/p3.jpg" alt="기사용 앱 백엔드 기획 화면 흐름도" loading="lazy"></div>
+<div style="min-width: 0">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">03</span><span class="badge solid">Backend Planning</span><span class="badge">기여도 100%(기획 주도)</span></div>
+<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">IM 택시 서비스 기사용 앱 백엔드 기획</h3>
+<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">주식회사 로드시스템 · 2024</p>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">택시 기사들의 업무 효율성을 높이기 위한 IM 택시 호출 서비스의 기사용 백엔드 시스템을 기획했습니다. 실제 택시 이용 경험과 기사 인터뷰를 바탕으로 현장 중심적인 서비스 요구사항을 도출하고 단순하면서도 효과적인 시스템 구조를 설계했습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)"><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Duration</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">2주</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Team</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">주식회사 로드시스템</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Role</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">Backend Planning Lead</p></div></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px"><span class="tag">Backend Planning</span><span class="tag">Service Design</span><span class="tag">User Interview</span><span class="tag">System Architecture</span></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="driver" aria-expanded="false" aria-controls="d-driver"><span class="lbl">자세히 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></div>
+</div>
+</div>
+<div class="open-in" id="d-driver" hidden style="margin-top: clamp(40px, 5vw, 64px)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px"><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">01</span>현장 리서치 및 사용자 분석</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>직접 IM 택시를 이용하며 택시 기사 3명과 심층 인터뷰를 진행하여 실제 업무 프로세스와 불편사항을 파악했습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>기존 택시 호출 앱들을 체계적으로 벤치마킹하여 시장 트렌드와 사용자 기대수준을 분석하고, 이를 바탕으로 핵심 기능과 개선점을 명확히 정의했습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">02</span>단순화된 시스템 아키텍처 설계</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>택시 기사들이 운전 중에도 쉽게 사용할 수 있도록 복잡한 기능을 배제하고 필수 기능만을 선별하여 직관적인 백엔드 구조를 기획했습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>단순한 레이아웃과 명확한 정보 흐름을 통해 학습 비용을 최소화하고 업무 효율성을 극대화하는 사용자 친화적인 시스템을 설계했습니다.</span></div></div></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">
+<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">운전 중인 택시 기사들이 안전하면서도 효율적으로 사용할 수 있는 백엔드 시스템을 설계하는 것이 가장 큰 과제였습니다. 복잡한 기능을 단순화하면서도 필요한 모든 정보를 제공해야 했습니다.</p></div>
+<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">현장 리서치를 통해 실제 택시 기사들의 업무 패턴을 파악하고, 핵심 기능만을 선별하여 직관적인 시스템을 구축했습니다. 단순한 정보 구조와 명확한 사용자 흐름으로 안전성과 효율성을 동시에 확보했습니다.</p></div>
+</div>
+</div>
+</article>
+<article class="pcard" data-cat="web" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">
+<div class="pimg"><img src="images/p4.jpg" alt="드로잉앱 화면 네 장 — 메뉴, 알림, 도형 목록, 캔버스" loading="lazy"></div>
+<div style="min-width: 0">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">04</span><span class="badge solid">Web &amp; Mobile Design</span><span class="badge">Featured</span><span class="badge">기여도 70%(협업)</span></div>
+<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">드로잉앱 기기 및 UI/UX 디자인</h3>
+<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">주식회사 닷 · 2023</p>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">사용자 중심의 디자인 사고를 바탕으로 직관적이고 강력한 드로잉 경험을 제공하는 모바일 앱을 설계했습니다. 복잡한 드로잉 도구들을 누구나 쉽게 사용할 수 있도록 인터페이스를 개선했습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)"><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Duration</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">3주</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Team</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">주식회사 닷</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Role</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">Lead UI/UX Designer</p></div></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px"><span class="tag">UI/UX Design</span><span class="tag">Mobile App</span><span class="tag">Figma</span><span class="tag">User Research</span></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="draw" aria-expanded="false" aria-controls="d-draw"><span class="lbl">자세히 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></div>
+</div>
+</div>
+<div class="open-in" id="d-draw" hidden style="margin-top: clamp(40px, 5vw, 64px)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px"><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">01</span>사용자 여정지도 및 사용자 인터뷰</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>시각장애인의 특성을 고려하여, 드로잉을 하지 않는 기존 인식을 바탕으로 직접 시각장애인 사용자들을 섭외하여 인터뷰를 진행하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>“[인용 문구 확인 필요]”는 전제 하에 사용자의 기대와 요구를 심층적으로 분석하였으며, A/B 테스트를 통해 메뉴 배치를 최적화하여 사용 편의성을 극대화하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>아이패드를 통한 다양한 앱 사용 경험을 가진 시각장애인 사용자의 실제 행태를 기반으로 사용자 여정 지도를 재구성하여 주요 페인 포인트를 도출하고, 반복되는 문제를 최소화하기 위한 최적의 UX 디자인 솔루션을 설계하였습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">02</span>UI UX 디자인</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>최신 사용자 가이드라인에 맞는 색상 팔레트를 적용하여 일관된 시각적 아이덴티티를 유지하였으며, 점자를 모티브로 한 차분한 제품들의 디자인 요소를 참고하여 원형 중심의 UI 레이아웃을 구성하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>사용자 인터랙션의 핵심인 도형 그리기 및 상세 기능을 직관적으로 구현하기 위해, 미국 CSUN 전시회 현장에서 실제 사용자의 인터뷰 및 피드백을 반영하여 UI를 지속적으로 개선한 경험이 있습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>이러한 사용자 중심 디자인 접근법을 통해 시각장애인의 접근성과 사용성을 높이는 동시에, 제품의 혁신성과 차별화를 실현하였습니다.</span></div></div></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">
+<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">복잡한 드로잉 도구들을 직관적이고 접근하기 쉬운 인터페이스로 구현하는 것이 가장 큰 과제였습니다. 다양한 사용자 레벨에 맞는 기능 제공과 동시에 단순함을 유지해야 했습니다.</p></div>
+<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">사용자 조사를 통해 핵심 기능을 식별하고, 계층적 정보 구조를 통해 단순하면서도 강력한 UI를 구현했습니다. 적응형 인터페이스를 도입하여 초보자와 전문가 모두가 만족할 수 있는 경험을 제공했습니다.</p></div>
+</div>
+</div>
+</article>
+<article class="pcard" data-cat="backend" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">
+<div class="pimg"><img src="images/p5.jpg" alt="디지털 파일 관리 웹 화면 — 폴더와 파일 썸네일 그리드" loading="lazy"></div>
+<div style="min-width: 0">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">05</span><span class="badge solid">Backend Planning</span><span class="badge">기여도 100%</span></div>
+<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">디지털 파일 관리 시스템 백엔드 기획</h3>
+<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">주식회사 닷 · 2023</p>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">시각장애인 사용자의 디지털 파일 관리 경험을 개선하기 위한 백엔드 시스템을 기획했습니다. 드로잉앱과 다양한 프로그램에서 생성된 파일을 효율적으로 보관하고 정리할 수 있는 접근성 중심의 서비스 아키텍처를 설계했습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)"><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Duration</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">2주</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Team</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">주식회사 닷</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Role</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">Backend Planning Lead</p></div></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px"><span class="tag">Backend Planning</span><span class="tag">Accessibility Design</span><span class="tag">User Research</span><span class="tag">Wireframing</span></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="files" aria-expanded="false" aria-controls="d-files"><span class="lbl">자세히 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></div>
+</div>
+</div>
+<div class="open-in" id="d-files" hidden style="margin-top: clamp(40px, 5vw, 64px)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px"><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">01</span>사용자 중심 기획 프로세스</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>드로잉앱 개발 이전 단계에서 시각장애인 사용자 3명과 직접 대면 인터뷰를 진행하여 실제 파일 관리 패턴과 니즈를 파악했습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>사용자의 행동 방식을 깊이 이해하고 이를 바탕으로 직관적인 버튼 배치와 인터페이스 구조를 설계하여 접근성을 최우선으로 고려한 사용자 경험을 구현했습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>시각장애인 사용자의 디지털 환경에서의 파일 관리 경험을 체계적으로 분석하여 기존 솔루션의 한계점을 도출하고 개선 방향을 설정했습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">02</span>와이어프레임 및 시스템 설계</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>복잡한 파일 구조를 시각장애인이 쉽게 이해할 수 있도록 단순하고 논리적인 정보 구조를 설계했습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>스크린리더 호환성과 키보드 네비게이션을 고려한 백엔드 데이터 구조를 기획하여 향후 드로잉앱과의 연동성을 확보했습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>사용자 인터뷰를 통해 도출된 핵심 기능들을 우선순위화하여 효율적인 개발 로드맵을 수립했습니다.</span></div></div></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">
+<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">시각장애인 사용자의 복잡한 일 관리 니즈를 충족하면서도 기술적 제약 사항 고려한 효율적인 백엔드 시스템을 설계하는 것이 가장 큰 과제였습니다.</p></div>
+<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">사용자 중심의 기획 프로세스를 통해 접근성을 최우선으로 고려한 시스템 아키텍처를 설계하고, 단계적 개발 로드맵을 통해 핵심 기능부터 순차적으로 구현할 수 있도록 했습니다.</p></div>
+</div>
+</div>
+</article>
+<article class="pcard" data-cat="web" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">
+<div class="pimg"><img src="images/p6.jpg" alt="다가치 나란히 앱 화면 네 장 — 로고, 시설 아이콘 메뉴, 실내 지도 안내, 경로 설정" loading="lazy"></div>
+<div style="min-width: 0">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">06</span><span class="badge solid">Web &amp; Mobile Design</span><span class="badge">기여도 100%</span></div>
+<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">다가치 나란히 단독 앱 기획 및 디자인</h3>
+<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">주식회사 닷 · 2022</p>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">크리에이터들이 언제 어디서나 포트폴리오를 관리하고 공유할 수 있는 모바일 애플리케이션을 디자인했습니다. 직관적인 콘텐츠 관리와 아름다운 프레젠테이션을 결합했습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)"><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Duration</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">3주</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Team</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">주식회사 닷</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Role</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">UI/UX Designer</p></div></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px"><span class="tag">Mobile Design</span><span class="tag">UI/UX Design</span><span class="tag">Creative Tools</span></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="dagachi" aria-expanded="false" aria-controls="d-dagachi"><span class="lbl">자세히 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></div>
+</div>
+</div>
+<div class="open-in" id="d-dagachi" hidden style="margin-top: clamp(40px, 5vw, 64px)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px"><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">01</span>서비스 구조도 및 에코시스템 맵 작성</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>다양한 UX 방법론을 활용하여 서비스의 전반적인 흐름과 관계를 시각화하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>서비스 구조도(Service Architecture Diagram)와 에코시스템 지도(Ecosystem Map)를 통해 사용자 접점과 내부 시스템 간 상호작용을 명확히 파악함으로써, 사용자 접점 개선의 기준을 마련하였습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">02</span>어피니티 다이어그램 및 공감 지도 활용</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>현장 방문을 통한 사용자 리서치를 바탕으로 수집한 정성적 데이터를 어피니티 다이어그램(Affinity Diagram)으로 구조화하여 분류하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>공감 지도(Empathy Map)를 작성하여 사용자의 니즈와 감정선을 깊이 이해하였습니다. 이를 통해 사용자 중심의 문제 정의 및 인사이트 도출에 주력하였습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">03</span>사용자 리서치 기반 메뉴 순서 및 레이아웃 최적화</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>실제 사용자 행동과 요구사항을 반영하여 메뉴의 정보 구조와 UI 레이아웃을 재설계하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>사용자의 인지 흐름과 탐색 패턴을 고려한 직관적인 메뉴 순서 배치로 효율적인 내비게이션을 구현, UX 향상에 기여하였습니다.</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">04</span>전맹 시각장애인 접근성 고려</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>스크린리더(Screen Reader) 사용성을 최우선으로 고려하여, 콘텐츠의 위계 순서(ARIA landmarks 및 tabindex 관리)를 최적화하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>모달 및 팝업의 영역 등에서 장애가 발생하지 않도록 접근성 예외 처리를 실시하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>이를 통해 시각장애인 사용자도 원활하게 서비스 이용이 가능하도록 하였습니다.</span></div></div></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">
+<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">다양한 형태의 크리에이티브 작품들을 하나의 앱에서 효과적으로 전시하고 관리할 수 있는 통합된 힘을 제공하는 것이 도전이었습니다.</p></div>
+<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">모듈식 레이아웃 시스템을 구축하여 텍스트, 이미지, 영상 등 다양한 콘텐츠 타입을 유연하게 배치할 수 있게 했습니다. 드래그 앤 드롭 인터페이스로 직관적인 편집 경험을 제공했습니다.</p></div>
+</div>
+</div>
+</article>
+<article class="pcard" data-cat="kiosk" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">
+<div class="pimg"><img src="images/p7.jpg" alt="고궁박물관 키오스크 화면 네 장 — 문화유산 메인, 유물 목록, 상세 설명, 고대비 드로잉" loading="lazy"></div>
+<div style="min-width: 0">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">07</span><span class="badge solid">Kiosk Design</span><span class="badge">기여도 100%</span></div>
+<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">고궁박물관 키오스크 단독 UI/UX디자인</h3>
+<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">주식회사 닷 · 2021</p>
+<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">박물관 방문객들에게 보다 풍부하고 인터랙티브한 관람 경험을 제공하는 키오스크 시스템을 디자인했습니다. 다양한 연령층의 사용자를 고려한 직관적이고 접근성 높은 인터페이스를 구현했습니다.</p>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)"><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Duration</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">2주반</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Team</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">주식회사 닷</p></div><div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">Role</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">Lead UI/UX Designer</p></div></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px"><span class="tag">Kiosk Design</span><span class="tag">Interactive</span><span class="tag">Museum</span><span class="tag">Accessibility</span></div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="kiosk" aria-expanded="false" aria-controls="d-kiosk"><span class="lbl">자세히 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></div>
+</div>
+</div>
+<div class="open-in" id="d-kiosk" hidden style="margin-top: clamp(40px, 5vw, 64px)">
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px"><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">01</span>IA (정보구조) 설계 및 와이어프레임</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>전맹 시각장애인의 사용성을 최우선으로 고려하여, 촉각과 청각 기반의 인터랙션을 지원하는 키오스크 메뉴 구조를 설계하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>스크린리더 호환성을 강화하기 위해 ARIA 속성 및 접근성 표준을 반영한 메뉴 속성을 개발하였으며, 시각장애인 사용자와의 협업을 통해 실제 [이어지는 문장 확인 필요]</span></div></div><div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">02</span>UI/UX 디자인</h4><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">01</span><span>저시력 사용자를 배려한 고대비 컬러 팔레트를 적용하여 가독성을 극대화하고, 시각적 피로도를 최소화한 UI 디자인을 완성하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">02</span><span>스크린리더 사용자를 위해 정보 접근 경로를 최소화하는 메뉴 구조를 설계, 사용자가 빠르고 직관적으로 원하는 정보에 도달할 수 있도록 하였습니다.</span></div><div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">03</span><span>고궁박물관의 전문적이고 고풍스러운 분위기와 조화를 이루는 색상 및 디자인 요소를 반영하여, 시각적 일관성과 브랜드 아이덴티티를 강화하였습니다.</span></div></div></div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">
+<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">다양한 연령층과 기술 숙련도를 가진 박물관 방문객들이 모두 쉽게 사용할 수 있는 인터페이스를 설계하는 것이 가장 큰 도전이었습니다. 또한 문화적 맥락을 존중하면서도 현대적인 디자인을 적용해야 했습니다.</p></div>
+<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">사용자 리서치를 통해 주요 사용자 그룹을 파악하고, 각 그룹의 니즈에 맞는 인터페이스 옵션을 제공했습니다. 큰 터치 버튼, 명확한 시각적 피드백, 다국어 지원 등을 통해 포용적인 디자인을 구현했습니다.</p></div>
+</div>
+</div>
+</article>
+</div>
 </section>
 
 <footer class="wrap" style="padding-top: clamp(72px, 9vw, 120px); padding-bottom: 40px; border-top: 1px solid rgba(11,11,12,.16)">
 <div class="disp wipe" aria-hidden="true" style="font-size: clamp(80px, 17vw, 260px); line-height: .8">Portfolio<span class="accent">.</span></div>
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(11,11,12,.16)">
-<p style="margin: 0; font-size: 15px; display: inline-flex; align-items: center; gap: 8px">Made with
-<svg width="16" height="16" viewBox="0 0 24 24" fill="#E5484D" aria-label="사랑" role="img"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3.1 4.5 6.9 4.5c2.1 0 3.6 1.1 5.1 2.9 1.5-1.8 3-2.9 5.1-2.9 3.8 0 6 3.9 4.5 7.3C19.5 16.4 12 21 12 21z"/></svg>
-by UI/UX Designer</p>
-<p class="mono" style="margin: 0; color: #5C5C60; text-transform: none">© 2026 Portfolio. All rights reserved.</p>
+<p style="margin: 0; font-size: 15px">Made with <span style="color: #E5484D">♥</span> by 김다애</p>
+<p class="mono" style="margin: 0; color: #5C5C60; text-transform: none">© 2026 김다애. All rights reserved.</p>
 <a class="circ" href="#top" aria-label="맨 위로">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
 </a>
@@ -284,135 +465,32 @@ by UI/UX Designer</p>
 </div>
 <script>
 (function () {
-  var ALL = [
-      { id: 'ecom', cat: 'web', label: 'Web & Mobile Design', badges: ['Featured', '기여도 100%'], title: '이커머스 플랫폼 리디자인', org: '주식회사 고퍼소프트', year: '2025', img: '/_blob/cd7c31f5c8a2bf5e377498890ad3ee9a', alt: '이커머스 셀러 대시보드 화면 두 장',
-        desc: '구매 전환율 향상을 목표로 한 이커머스 플랫폼의 전면적인 리디자인 프로젝트입니다. 사용자 여정을 분석하고 최적화하여 비즈니스 목표를 달성했습니다.',
-        sections: [
-          { title: '핵심 문제점 및 목표', items: ['기존 플랫폼은 복잡한 다단계 주문 관리 인터페이스와 직관적이지 않은 정보 구조로 인해 사용자 이탈이 발생하고 핵심 기능 접근성이 저하되었습니다.', '특히 반복 작업이 많은 상품 등록 프로세스의 비효율성과 모바일 환경에서의 제한적인 사용성이 주요 문제로 지적되었습니다.', '이에 구매대행 셀러들의 워크플로우를 깊이 이해하고 AI 자동화를 통한 효율적인 인터페이스 설계로 업무 생산성 향상을 목표로 설정했습니다.'] },
-          { title: '사용자 리서치 및 분석', items: ['기존 사용자들과의 심층 인터뷰와 워크플로우 분석을 통해 반복적인 작업에서 발생하는 주요 시간 소모 지점을 식별했습니다.', '사용자 행동 패턴 분석을 통해 가장 빈번하게 사용되는 기능들을 우선순위로 배치하고, 접근성을 향상시켰습니다.', 'A/B 테스트를 통해 새로운 인터페이스의 효과를 측정하고, 데이터 기반의 지속적인 개선을 진행했습니다.'] }
-        ],
-        tags: ['Web Design', 'E-commerce', 'Conversion Optimization', 'Data Analysis'], duration: '4주', team: '주식회사 고퍼소프트', role: 'Senior UI/UX Designer',
-        challenge: '기존 시스템의 복잡한 구조와 낮은 전환율 문제를 해결하면서도 기존 사용자들의 사용 패턴을 크게 방해하지 않는 개선방안이 필요했습니다.',
-        solution: 'A/B 테스트와 사용자 행동 분석을 통해 단계별로 개선사항을 적용했습니다. 체크아웃 프로세스를 단순화하고, 상품 발견성을 높이는 검색 및 필터링 시스템을 구축했습니다.', link: false },
-      { id: 'taxi', cat: 'planning', label: 'App Planning', badges: ['Featured', '기여도 100%'], title: 'IM 택시 서비스 연동 기획', org: '주식회사 로드시스템', year: '2024', img: '/_blob/8ccea11f23d049c0b9473aeb3e51a3f6', alt: '야간 도로 위 택시 표시등 사진',
-        desc: '자사 Trip.Pass 앱과 IM 택시 서비스 간의 성공적인 결합 및 연동을 위한 서비스 기획 총괄 프로젝트입니다. 사용자 경험 최적화와 서비스 경쟁력 강화를 목표로 진행되었습니다.',
-        sections: [
-          { title: '사용자 리서치 강화', items: ['사용자 여정 지도(User Journey Map)를 통해 기존 Trip.Pass 앱 사용자의 여행 패턴과 택시 이용 경험을 분석하였습니다.', '에코시스템 지도(Ecosystem Map)를 활용하여 Trip.Pass와 IM 택시 서비스 간의 상호작용과 연동 지점을 명확히 정의하였습니다.', '어피니티 다이어그램(Affinity Diagram)을 통해 사용자 피드백과 요구사항을 체계적으로 분류하고 핵심 사용자 니즈를 도출하였습니다.'] },
-          { title: '서비스 로직 및 플로우 설계', items: ['정의된 사용자 및 비즈니스 요구사항을 바탕으로 Trip.Pass 앱 내 택시 서비스 연동을 위한 최적의 서비스 로직을 설계하였습니다.', 'FIGMA를 활용하여 사용자 인터페이스 프로토타이핑을 진행하고, 직관적인 서비스 연동 경험을 구현하였습니다.', 'PPT를 활용한 상세한 기획 문서를 작성하여 개발팀과 이해관계자들 간의 원활한 소통을 지원하였습니다.'] }
-        ],
-        tags: ['App Planning', 'Service Design', 'UX Research', 'Prototyping', 'Figma'], duration: '3주', team: '주식회사 로드시스템', role: 'Service Planning Lead',
-        challenge: 'Trip.Pass 앱과 IM 택시 서비스라는 서로 다른 플랫폼 간의 연동에서 일관된 사용자 경험을 제공하면서도 각 서비스의 특성을 유지하는 것이 가장 큰 과제였습니다.',
-        solution: '사용자 리서치를 통해 핵심 터치포인트를 식별하고, 단계적 연동 방식을 통해 사용자가 자연스럽게 두 서비스를 이용할 수 있도록 설계했습니다. FIGMA 프로토타이핑으로 실제 구현 전 사용성을 검증했습니다.', link: true },
-      { id: 'driver', cat: 'backend', label: 'Backend Planning', badges: ['기여도 100%(기획 주도)'], title: 'IM 택시 서비스 기사용 앱 백엔드 기획', org: '주식회사 로드시스템', year: '2024', img: '/_blob/fd10f709a3872e3c062ddb2b6d68886a', alt: '기사용 앱 백엔드 기획 화면 흐름도',
-        desc: '택시 기사들의 업무 효율성을 높이기 위한 IM 택시 호출 서비스의 기사용 백엔드 시스템을 기획했습니다. 실제 택시 이용 경험과 기사 인터뷰를 바탕으로 현장 중심적인 서비스 요구사항을 도출하고 단순하면서도 효과적인 시스템 구조를 설계했습니다.',
-        sections: [
-          { title: '현장 리서치 및 사용자 분석', items: ['직접 IM 택시를 이용하며 택시 기사 3명과 심층 인터뷰를 진행하여 실제 업무 프로세스와 불편사항을 파악했습니다.', '기존 택시 호출 앱들을 체계적으로 벤치마킹하여 시장 트렌드와 사용자 기대수준을 분석하고, 이를 바탕으로 핵심 기능과 개선점을 명확히 정의했습니다.'] },
-          { title: '단순화된 시스템 아키텍처 설계', items: ['택시 기사들이 운전 중에도 쉽게 사용할 수 있도록 복잡한 기능을 배제하고 필수 기능만을 선별하여 직관적인 백엔드 구조를 기획했습니다.', '단순한 레이아웃과 명확한 정보 흐름을 통해 학습 비용을 최소화하고 업무 효율성을 극대화하는 사용자 친화적인 시스템을 설계했습니다.'] }
-        ],
-        tags: ['Backend Planning', 'Service Design', 'User Interview', 'System Architecture'], duration: '2주', team: '주식회사 로드시스템', role: 'Backend Planning Lead',
-        challenge: '운전 중인 택시 기사들이 안전하면서도 효율적으로 사용할 수 있는 백엔드 시스템을 설계하는 것이 가장 큰 과제였습니다. 복잡한 기능을 단순화하면서도 필요한 모든 정보를 제공해야 했습니다.',
-        solution: '현장 리서치를 통해 실제 택시 기사들의 업무 패턴을 파악하고, 핵심 기능만을 선별하여 직관적인 시스템을 구축했습니다. 단순한 정보 구조와 명확한 사용자 흐름으로 안전성과 효율성을 동시에 확보했습니다.', link: false },
-      { id: 'draw', cat: 'web', label: 'Web & Mobile Design', badges: ['Featured', '기여도 70%(협업)'], title: '드로잉앱 기기 및 UI/UX 디자인', org: '주식회사 닷', year: '2023', img: '/_blob/61f56f9b60386ba5b91d3bbd5e9f0c79', alt: '드로잉앱 화면 네 장 — 메뉴, 알림, 도형 목록, 캔버스',
-        desc: '사용자 중심의 디자인 사고를 바탕으로 직관적이고 강력한 드로잉 경험을 제공하는 모바일 앱을 설계했습니다. 복잡한 드로잉 도구들을 누구나 쉽게 사용할 수 있도록 인터페이스를 개선했습니다.',
-        sections: [
-          { title: '사용자 여정지도 및 사용자 인터뷰', items: ['시각장애인의 특성을 고려하여, 드로잉을 하지 않는 기존 인식을 바탕으로 직접 시각장애인 사용자들을 섭외하여 인터뷰를 진행하였습니다.', '“[인용 문구 확인 필요]”는 전제 하에 사용자의 기대와 요구를 심층적으로 분석하였으며, A/B 테스트를 통해 메뉴 배치를 최적화하여 사용 편의성을 극대화하였습니다.', '아이패드를 통한 다양한 앱 사용 경험을 가진 시각장애인 사용자의 실제 행태를 기반으로 사용자 여정 지도를 재구성하여 주요 페인 포인트를 도출하고, 반복되는 문제를 최소화하기 위한 최적의 UX 디자인 솔루션을 설계하였습니다.'] },
-          { title: 'UI UX 디자인', items: ['최신 사용자 가이드라인에 맞는 색상 팔레트를 적용하여 일관된 시각적 아이덴티티를 유지하였으며, 점자를 모티브로 한 차분한 제품들의 디자인 요소를 참고하여 원형 중심의 UI 레이아웃을 구성하였습니다.', '사용자 인터랙션의 핵심인 도형 그리기 및 상세 기능을 직관적으로 구현하기 위해, 미국 CSUN 전시회 현장에서 실제 사용자의 인터뷰 및 피드백을 반영하여 UI를 지속적으로 개선한 경험이 있습니다.', '이러한 사용자 중심 디자인 접근법을 통해 시각장애인의 접근성과 사용성을 높이는 동시에, 제품의 혁신성과 차별화를 실현하였습니다.'] }
-        ],
-        tags: ['UI/UX Design', 'Mobile App', 'Figma', 'User Research'], duration: '3주', team: '주식회사 닷', role: 'Lead UI/UX Designer',
-        challenge: '복잡한 드로잉 도구들을 직관적이고 접근하기 쉬운 인터페이스로 구현하는 것이 가장 큰 과제였습니다. 다양한 사용자 레벨에 맞는 기능 제공과 동시에 단순함을 유지해야 했습니다.',
-        solution: '사용자 조사를 통해 핵심 기능을 식별하고, 계층적 정보 구조를 통해 단순하면서도 강력한 UI를 구현했습니다. 적응형 인터페이스를 도입하여 초보자와 전문가 모두가 만족할 수 있는 경험을 제공했습니다.', link: true },
-      { id: 'files', cat: 'backend', label: 'Backend Planning', badges: ['기여도 100%'], title: '디지털 파일 관리 시스템 백엔드 기획', org: '주식회사 닷', year: '2023', img: '/_blob/6254d8824bf822e0ef060382085421cf', alt: '디지털 파일 관리 웹 화면 — 폴더와 파일 썸네일 그리드',
-        desc: '시각장애인 사용자의 디지털 파일 관리 경험을 개선하기 위한 백엔드 시스템을 기획했습니다. 드로잉앱과 다양한 프로그램에서 생성된 파일을 효율적으로 보관하고 정리할 수 있는 접근성 중심의 서비스 아키텍처를 설계했습니다.',
-        sections: [
-          { title: '사용자 중심 기획 프로세스', items: ['드로잉앱 개발 이전 단계에서 시각장애인 사용자 3명과 직접 대면 인터뷰를 진행하여 실제 파일 관리 패턴과 니즈를 파악했습니다.', '사용자의 행동 방식을 깊이 이해하고 이를 바탕으로 직관적인 버튼 배치와 인터페이스 구조를 설계하여 접근성을 최우선으로 고려한 사용자 경험을 구현했습니다.', '시각장애인 사용자의 디지털 환경에서의 파일 관리 경험을 체계적으로 분석하여 기존 솔루션의 한계점을 도출하고 개선 방향을 설정했습니다.'] },
-          { title: '와이어프레임 및 시스템 설계', items: ['복잡한 파일 구조를 시각장애인이 쉽게 이해할 수 있도록 단순하고 논리적인 정보 구조를 설계했습니다.', '스크린리더 호환성과 키보드 네비게이션을 고려한 백엔드 데이터 구조를 기획하여 향후 드로잉앱과의 연동성을 확보했습니다.', '사용자 인터뷰를 통해 도출된 핵심 기능들을 우선순위화하여 효율적인 개발 로드맵을 수립했습니다.'] }
-        ],
-        tags: ['Backend Planning', 'Accessibility Design', 'User Research', 'Wireframing'], duration: '2주', team: '주식회사 닷', role: 'Backend Planning Lead',
-        challenge: '시각장애인 사용자의 복잡한 일 관리 니즈를 충족하면서도 기술적 제약 사항 고려한 효율적인 백엔드 시스템을 설계하는 것이 가장 큰 과제였습니다.',
-        solution: '사용자 중심의 기획 프로세스를 통해 접근성을 최우선으로 고려한 시스템 아키텍처를 설계하고, 단계적 개발 로드맵을 통해 핵심 기능부터 순차적으로 구현할 수 있도록 했습니다.', link: false },
-      { id: 'dagachi', cat: 'web', label: 'Web & Mobile Design', badges: ['기여도 100%'], title: '다가치 나란히 단독 앱 기획 및 디자인', org: '주식회사 닷', year: '2022', img: '/_blob/6920a9eadac6bfefc7ed32a40983fa38', alt: '다가치 나란히 앱 화면 네 장 — 로고, 시설 아이콘 메뉴, 실내 지도 안내, 경로 설정',
-        desc: '크리에이터들이 언제 어디서나 포트폴리오를 관리하고 공유할 수 있는 모바일 애플리케이션을 디자인했습니다. 직관적인 콘텐츠 관리와 아름다운 프레젠테이션을 결합했습니다.',
-        sections: [
-          { title: '서비스 구조도 및 에코시스템 맵 작성', items: ['다양한 UX 방법론을 활용하여 서비스의 전반적인 흐름과 관계를 시각화하였습니다.', '서비스 구조도(Service Architecture Diagram)와 에코시스템 지도(Ecosystem Map)를 통해 사용자 접점과 내부 시스템 간 상호작용을 명확히 파악함으로써, 사용자 접점 개선의 기준을 마련하였습니다.'] },
-          { title: '어피니티 다이어그램 및 공감 지도 활용', items: ['현장 방문을 통한 사용자 리서치를 바탕으로 수집한 정성적 데이터를 어피니티 다이어그램(Affinity Diagram)으로 구조화하여 분류하였습니다.', '공감 지도(Empathy Map)를 작성하여 사용자의 니즈와 감정선을 깊이 이해하였습니다. 이를 통해 사용자 중심의 문제 정의 및 인사이트 도출에 주력하였습니다.'] },
-          { title: '사용자 리서치 기반 메뉴 순서 및 레이아웃 최적화', items: ['실제 사용자 행동과 요구사항을 반영하여 메뉴의 정보 구조와 UI 레이아웃을 재설계하였습니다.', '사용자의 인지 흐름과 탐색 패턴을 고려한 직관적인 메뉴 순서 배치로 효율적인 내비게이션을 구현, UX 향상에 기여하였습니다.'] },
-          { title: '전맹 시각장애인 접근성 고려', items: ['스크린리더(Screen Reader) 사용성을 최우선으로 고려하여, 콘텐츠의 위계 순서(ARIA landmarks 및 tabindex 관리)를 최적화하였습니다.', '모달 및 팝업의 영역 등에서 장애가 발생하지 않도록 접근성 예외 처리를 실시하였습니다.', '이를 통해 시각장애인 사용자도 원활하게 서비스 이용이 가능하도록 하였습니다.'] }
-        ],
-        tags: ['Mobile Design', 'UI/UX Design', 'Creative Tools'], duration: '3주', team: '주식회사 닷', role: 'UI/UX Designer',
-        challenge: '다양한 형태의 크리에이티브 작품들을 하나의 앱에서 효과적으로 전시하고 관리할 수 있는 통합된 힘을 제공하는 것이 도전이었습니다.',
-        solution: '모듈식 레이아웃 시스템을 구축하여 텍스트, 이미지, 영상 등 다양한 콘텐츠 타입을 유연하게 배치할 수 있게 했습니다. 드래그 앤 드롭 인터페이스로 직관적인 편집 경험을 제공했습니다.', link: false },
-      { id: 'kiosk', cat: 'kiosk', label: 'Kiosk Design', badges: ['기여도 100%'], title: '고궁박물관 키오스크 단독 UI/UX디자인', org: '주식회사 닷', year: '2021', img: '/_blob/b7dc35a899feccf92979eece7c5ad81b', alt: '고궁박물관 키오스크 화면 네 장 — 문화유산 메인, 유물 목록, 상세 설명, 고대비 드로잉',
-        desc: '박물관 방문객들에게 보다 풍부하고 인터랙티브한 관람 경험을 제공하는 키오스크 시스템을 디자인했습니다. 다양한 연령층의 사용자를 고려한 직관적이고 접근성 높은 인터페이스를 구현했습니다.',
-        sections: [
-          { title: 'IA (정보구조) 설계 및 와이어프레임', items: ['전맹 시각장애인의 사용성을 최우선으로 고려하여, 촉각과 청각 기반의 인터랙션을 지원하는 키오스크 메뉴 구조를 설계하였습니다.', '스크린리더 호환성을 강화하기 위해 ARIA 속성 및 접근성 표준을 반영한 메뉴 속성을 개발하였으며, 시각장애인 사용자와의 협업을 통해 실제 [이어지는 문장 확인 필요]'] },
-          { title: 'UI/UX 디자인', items: ['저시력 사용자를 배려한 고대비 컬러 팔레트를 적용하여 가독성을 극대화하고, 시각적 피로도를 최소화한 UI 디자인을 완성하였습니다.', '스크린리더 사용자를 위해 정보 접근 경로를 최소화하는 메뉴 구조를 설계, 사용자가 빠르고 직관적으로 원하는 정보에 도달할 수 있도록 하였습니다.', '고궁박물관의 전문적이고 고풍스러운 분위기와 조화를 이루는 색상 및 디자인 요소를 반영하여, 시각적 일관성과 브랜드 아이덴티티를 강화하였습니다.'] }
-        ],
-        tags: ['Kiosk Design', 'Interactive', 'Museum', 'Accessibility'], duration: '2주반', team: '주식회사 닷', role: 'Lead UI/UX Designer',
-        challenge: '다양한 연령층과 기술 숙련도를 가진 박물관 방문객들이 모두 쉽게 사용할 수 있는 인터페이스를 설계하는 것이 가장 큰 도전이었습니다. 또한 문화적 맥락을 존중하면서도 현대적인 디자인을 적용해야 했습니다.',
-        solution: '사용자 리서치를 통해 주요 사용자 그룹을 파악하고, 각 그룹의 니즈에 맞는 인터페이스 옵션을 제공했습니다. 큰 터치 버튼, 명확한 시각적 피드백, 다국어 지원 등을 통해 포용적인 디자인을 구현했습니다.', link: true }
-    ];
-  var state = { filter: 'all', open: {} };
-  try { var saved = localStorage.getItem('pf-filter'); if (saved) state.filter = saved; } catch (e) {}
-  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
-  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
-  var DEFS = [['all', 'All'], ['web', 'Web & Mobile'], ['planning', 'Planning'], ['backend', 'Backend'], ['kiosk', 'Kiosk']];
-  var plus = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
-  function renderFilters() {
-    document.getElementById('filters').innerHTML = DEFS.map(function (d) {
-      var n = d[0] === 'all' ? ALL.length : ALL.filter(function (p) { return p.cat === d[0]; }).length;
-      var on = d[0] === state.filter;
-      return '<button type="button" class="tab' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-f="' + d[0] + '">' + esc(d[1]) + '<span class="cnt">' + n + '</span></button>';
-    }).join('');
-  }
-  function detail(p) {
-    var secs = p.sections.map(function (s, si) {
-      return '<div><h4 style="margin: 0 0 8px; font-size: 19px; font-weight: 700; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: baseline"><span class="mono accent" style="font-size: 11px">' + pad(si + 1) + '</span>' + esc(s.title) + '</h4>' +
-        s.items.map(function (t, ti) { return '<div class="bl"><span class="mono" style="color: #8A8A90; font-size: 11px; padding-top: 5px">' + pad(ti + 1) + '</span><span>' + esc(t) + '</span></div>'; }).join('') + '</div>';
-    }).join('');
-    return '<div class="open-in" id="d-' + p.id + '" style="margin-top: clamp(40px, 5vw, 64px)">' +
-      '<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px">' + secs + '</div>' +
-      '<div class="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px; margin-top: 40px; background: rgba(11,11,12,.14); border: 1px solid rgba(11,11,12,.14)">' +
-      '<div style="background: #F2F2EF; padding: 28px"><p class="disp" style="margin: 0; font-size: 26px; line-height: 1">Challenge</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #2A2A2E">' + esc(p.challenge) + '</p></div>' +
-      '<div style="background: #0B0B0C; color: #F2F2EF; padding: 28px"><p class="disp accent" style="margin: 0; font-size: 26px; line-height: 1">Solution</p><p style="margin: 16px 0 0; font-size: 15px; line-height: 1.8; color: #D6D6D2">' + esc(p.solution) + '</p></div>' +
-      '</div></div>';
-  }
-  function renderCards() {
-    var html = '';
-    ALL.forEach(function (p, i) {
-      if (state.filter !== 'all' && p.cat !== state.filter) return;
-      var open = !!state.open[p.id];
-      html += '<article class="pcard" style="padding: clamp(48px, 6vw, 80px) 0; border-bottom: 1px solid rgba(11,11,12,.16)">' +
-        '<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: start">' +
-        '<div class="pimg"><img src="' + esc(p.img.replace(/^\/_blob\/(\w+)$/, function (m, id) { return 'images/' + (MAP[id] || ''); })) + '" alt="' + esc(p.alt) + '" loading="lazy"></div>' +
-        '<div style="min-width: 0">' +
-        '<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap"><span class="pnum accent">' + pad(i + 1) + '</span><span class="badge solid">' + esc(p.label) + '</span>' +
-        p.badges.map(function (b) { return '<span class="badge">' + esc(b) + '</span>'; }).join('') + '</div>' +
-        '<h3 class="ko" style="margin: 20px 0 0; font-size: clamp(30px, 3.4vw, 48px)">' + esc(p.title) + '</h3>' +
-        '<p class="mono" style="margin: 12px 0 0; color: #5C5C60; text-transform: none; letter-spacing: .02em">' + esc(p.org) + ' · ' + esc(p.year) + '</p>' +
-        '<p style="margin: 24px 0 0; font-size: 17px; line-height: 1.8; color: #2A2A2E">' + esc(p.desc) + '</p>' +
-        '<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(11,11,12,.14)">' +
-        [['Duration', p.duration], ['Team', p.team], ['Role', p.role]].map(function (f) { return '<div style="min-width: 0"><p class="mono" style="margin: 0; color: #5C5C60; font-size: 11px">' + f[0] + '</p><p style="margin: 6px 0 0; font-size: 15px; font-weight: 500">' + esc(f[1]) + '</p></div>'; }).join('') + '</div>' +
-        '<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px">' + p.tags.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
-        '<div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px"><button type="button" class="ghost" data-t="' + p.id + '" aria-expanded="' + open + '" aria-controls="d-' + p.id + '">' + (open ? '접기' : '자세히 보기') + plus + '</button></div>' +
-        '</div></div>' + (open ? detail(p) : '') + '</article>';
+  var bar = document.getElementById('filters'), list = document.getElementById('cards');
+  function apply(f) {
+    bar.querySelectorAll('[data-f]').forEach(function (b) {
+      var on = b.getAttribute('data-f') === f;
+      b.classList.toggle('on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
-    document.getElementById('cards').innerHTML = html;
+    list.querySelectorAll('article[data-cat]').forEach(function (a) {
+      a.hidden = !(f === 'all' || a.getAttribute('data-cat') === f);
+    });
   }
-  var MAP = {"e96af25a8c6de985520dc913eed3246b": "artwork.jpg", "afddd82e13aff625a6d0844f8afed277": "portrait_hd.jpg", "5b95adc551c93132894ac7ee4fdf47a8": "portrait_hd.jpg", "be6d8b81092f0652790fa5fb6f79364a": "gg_list.jpg", "d5d5f130ab8f348a11969a1449bfaf5b": "gg_detail.jpg", "a7db28c609bfb4ef3887afccbeb1275a": "gg_mo_list.jpg", "36f6a1607be55d754f12fd6d2e62ec6f": "gg_mo_detail.jpg", "5073831f4868449bae7a4f7b4d4e48f6": "gg_menu.jpg", "cd7c31f5c8a2bf5e377498890ad3ee9a": "p1.jpg", "8ccea11f23d049c0b9473aeb3e51a3f6": "p2.jpg", "fd10f709a3872e3c062ddb2b6d68886a": "p3.jpg", "61f56f9b60386ba5b91d3bbd5e9f0c79": "p4.jpg", "6254d8824bf822e0ef060382085421cf": "p5.jpg", "6920a9eadac6bfefc7ed32a40983fa38": "p6.jpg", "b7dc35a899feccf92979eece7c5ad81b": "p7.jpg"};
-  document.getElementById('filters').addEventListener('click', function (e) {
-    var b = e.target.closest('[data-f]'); if (!b) return;
-    state.filter = b.getAttribute('data-f');
-    try { localStorage.setItem('pf-filter', state.filter); } catch (err) {}
-    renderFilters(); renderCards();
+  var saved = null;
+  try { saved = localStorage.getItem('pf-filter'); } catch (err) {}
+  if (saved && bar.querySelector('[data-f="' + saved + '"]')) apply(saved);
+  bar.addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-f]'); if (!b) return;
+    var f = b.getAttribute('data-f'); apply(f);
+    try { localStorage.setItem('pf-filter', f); } catch (err) {}
   });
-  document.getElementById('cards').addEventListener('click', function (e) {
-    var b = e.target.closest('[data-t]'); if (!b) return;
-    var id = b.getAttribute('data-t');
-    state.open[id] = !state.open[id];
-    renderCards();
-    var again = document.querySelector('[data-t="' + id + '"]'); if (again) again.focus();
+  list.addEventListener('click', function (ev) {
+    var b = ev.target.closest('[data-t]'); if (!b) return;
+    var d = document.getElementById('d-' + b.getAttribute('data-t'));
+    var open = d.hidden;
+    d.hidden = !open;
+    b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    b.querySelector('.lbl').textContent = open ? '접기' : '자세히 보기';
   });
-  renderFilters(); renderCards();
 })();
 </script>
 </body>
